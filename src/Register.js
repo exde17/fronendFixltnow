@@ -7,7 +7,8 @@ function Register( {navigation} ) {
       <View style={styles.contenido}>
         <Text style={styles.titulo}>  Registro </Text>
 
-        {/* zzzzzzzzzzz */}
+
+
         <TextInput 
         placeholder='User'
         style={styles.textInput}
