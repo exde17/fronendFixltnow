@@ -15,6 +15,7 @@ function Login( {navigation} ) {
           style={styles.textInput}
         />
         <TextInput 
+          secureTextEntry={true}
           placeholder='password'
           style={styles.textInput}
         />

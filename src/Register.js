@@ -20,11 +20,13 @@ function Register( {navigation} ) {
         />
         
         <TextInput
+        secureTextEntry={true}
         placeholder='Password'
         style={styles.textInput}
         />
 
         <TextInput
+        secureTextEntry={true}
         placeholder='Confirmar Password'
         style={styles.textInput}
         />
