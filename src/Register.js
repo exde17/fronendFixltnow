@@ -1,12 +1,13 @@
 import { View, Text, StyleSheet, TextInput, TouchableOpacity } from 'react-native'
 import React from 'react'
 
+
+
 function Register( {navigation} ) {
   return (
     <View style={styles.container}>
       <View style={styles.contenido}>
         <Text style={styles.titulo}>  Registro </Text>
-
 
 
         <TextInput 

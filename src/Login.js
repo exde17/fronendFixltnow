@@ -2,6 +2,7 @@ import React from 'react'
 import { View, StyleSheet, Text, TextInput, TouchableOpacity} from 'react-native'
 
 
+
 function Login( {navigation} ) {
   return (
     <View style={styles.container}>
@@ -23,12 +24,17 @@ function Login( {navigation} ) {
       </View>
 
       <TouchableOpacity style= {styles.botonLogin} > 
-        <Text style={styles.text}> Login </Text> 
+        <Text style={styles.text}> Login  </Text> 
       </TouchableOpacity>
       
       <TouchableOpacity style= {styles.boton}
       onPress={() => navigation.navigate('Register')} > 
         <Text style={styles.text}> Crea tu cuenta? SIGNUP </Text> 
+      </TouchableOpacity>
+
+      <TouchableOpacity style= {styles.boton}
+      onPress={() => navigation.navigate('Menu')} > 
+        <Text style={styles.text}> Menu </Text> 
       </TouchableOpacity>
   
     </View>
