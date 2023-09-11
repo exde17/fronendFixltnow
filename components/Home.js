@@ -1,11 +1,11 @@
 import { View, Text, TouchableOpacity } from 'react-native'
 import React from 'react'
 
-const Home = () => {
+function Home( {navigation} ){
   return (
     <View>
       <Text>Home</Text>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('Login')}>
         <Text>Atras</Text>
       </TouchableOpacity>
     </View>
