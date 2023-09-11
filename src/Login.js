@@ -17,7 +17,7 @@ function Login( {navigation} ) {
         />
         <TextInput 
           secureTextEntry={true}
-          placeholder='password'
+          placeholder='Password'
           style={styles.textInput}
         />
         <Text style={styles.Password}>Has olvidado la contraseña ?</Text>
