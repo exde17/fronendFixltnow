@@ -1,6 +1,8 @@
 import { View, Text } from 'react-native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import React from 'react'
+import Ionicons from 'react-native-vector-icons/'
+
 import Home from '../components/Home';
 import settings from '../components/settings';
 
@@ -8,7 +10,7 @@ const Tab = createBottomTabNavigator();
 
 function Menu() {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator screenOptions={{tabBarShowLabel: false, headerShown: false}}>
 
         <Tab.Screen name="Home" component={Home}         />
         <Tab.Screen name="Settings" component={settings} />
