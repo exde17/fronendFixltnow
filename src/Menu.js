@@ -1,7 +1,6 @@
 import { View, Text } from 'react-native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import React from 'react'
-import Ionicons from 'react-native-vector-icons/'
 
 import Home from '../components/Home';
 import settings from '../components/settings';
