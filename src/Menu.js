@@ -1,9 +1,10 @@
-import { View, Text } from 'react-native'
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { Icon } from 'react-native-vector-icons/FontAwesome';
+import { FontAwesome } from '@expo/vector-icons';
 import React from 'react'
 
 import Home from '../components/Home';
-import settings from '../components/settings';
+import settings from '../components/Settings';
 
 const Tab = createBottomTabNavigator();
 
@@ -11,11 +12,17 @@ function Menu() {
   return (
     <Tab.Navigator screenOptions={{tabBarShowLabel: false, headerShown: false}}>
 
-        <Tab.Screen name="Home" component={Home}         />
-        <Tab.Screen name="Settings" component={settings} />
+        <Tab.Screen name="Home" 
+        component={Home} 
+        options={{tabBarLabel: 'Inicio', 
+        tabBarIcon: ({ color, size}) => 
+        ( <FontAwesome name="home" color={color} size={size} /> ), }}  />
+        
+        
+        <Tab.Screen name="Settings" 
+        component={settings} />
 
     </Tab.Navigator>
-    
     
     /*
     <View>
