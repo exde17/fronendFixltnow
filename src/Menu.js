@@ -1,5 +1,4 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Icon } from 'react-native-vector-icons/FontAwesome';
 import { FontAwesome } from '@expo/vector-icons';
 import React from 'react'
 
@@ -20,7 +19,10 @@ function Menu() {
         
         
         <Tab.Screen name="Settings" 
-        component={settings} />
+        component={settings}
+        options={{tabBarLabel: 'Inicio', 
+        tabBarIcon: ({ color, size}) => 
+        ( <FontAwesome name="gear" color={color} size={size} /> ), }}  />
 
     </Tab.Navigator>
     
