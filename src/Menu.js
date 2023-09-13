@@ -1,5 +1,6 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { FontAwesome } from '@expo/vector-icons';
+import { StyleSheet } from 'react-native';
 import React from 'react'
 
 import Home from '../components/Home';
@@ -11,14 +12,16 @@ function Menu() {
   return (
     <Tab.Navigator screenOptions={{tabBarShowLabel: false, headerShown: false}}>
 
-        <Tab.Screen name="Home" 
+        <Tab.Screen
+        name="Home" 
         component={Home} 
         options={{tabBarLabel: 'Inicio', 
         tabBarIcon: ({ color, size}) => 
         ( <FontAwesome name="home" color={color} size={size} /> ), }}  />
         
         
-        <Tab.Screen name="Settings" 
+        <Tab.Screen
+        name="Settings" 
         component={settings}
         options={{tabBarLabel: 'Inicio', 
         tabBarIcon: ({ color, size}) => 
@@ -26,10 +29,6 @@ function Menu() {
 
     </Tab.Navigator>
     
-    /*
-    <View>
-      <Text>Menu</Text>
-    </View>*/
   )
 }
 
